@@ -1,1 +1,1 @@
-# WDI--Jeopardy
+# WDI-Jeopardy
