@@ -1,18 +1,13 @@
 body {
     text-align: center;
     margin: 0;
-    background-color: black;
-	
-}
-
-.sub-header {
-    padding-top: 20px;
+    background-color: rgba(192, 192, 192, 0.603);
 }
 
 .title {
     text-transform: uppercase;
     font-family: 'Spectral SC', serif;
-	color: #071725;
+    color: rgba(0, 0, 0, 0.555);
     letter-spacing: 1px;
     font-weight: 400;
     font-size: 45px;
@@ -20,7 +15,7 @@ body {
 }
 
 header {
-    background-color: #1540F8;
+    background-color: rgb(62, 49, 241);
     color: #FFFFFF;
     padding: 30px 20px;
 }
@@ -51,12 +46,14 @@ a {
     margin: 0 20px;
     border-bottom: 2px solid transparent;
 }
+
 a:hover {
     background-color: white;
 }
 
 main {
-    width: 850px; margin: 35px auto;
+    width: 850px;
+    margin: 35px auto;
 }
 
 p {
@@ -65,9 +62,7 @@ p {
     font-size: 18px;
 }
 
-img {
-    margin: 40px 8px 0;
-}
+
 
 footer {
     text-transform: uppercase;
@@ -87,6 +82,7 @@ footer {
     height: 0;
     font-size: 0;
 }
+
 .copyright {
     font-family: "Raleway";
     float: left;
