@@ -1,52 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jeopardy Online</title>
+        <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Jeopardy</title>
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-    <header>
-        <div class="container-fluid">
-            <div class="col-md-12">
-                <h1 class="title">Jeopardy Online</h1>
+    <body>
+        <div class="container">
+            <div class="row header">
+                <div class="col-md-6">
+                    <img class="logo img-responsive" src="images/logo.jpg" alt="logo">
+                </div>
+                <div class="col-md-6 text-right text-uppercase">
+                    <h1 class="name">Fa
+                </div>
             </div>
-            <div class="col-md-12">
-                <h3 class="sub-header">Play the classic game of Jeopardy!</h3>
+            <div class="row">
+                <div class="col-md-12">
+                    <hr class="horizontal-rule">
+                </div>
             </div>
-    </header>
-    <nav>
-        <div class="col-md-12">
-            <a href=“#instructions”>Instructions</a>
-            <a href=“#game”>Game</a>
+         
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 class="featured-work">Play the classic game of Jeopardy.  This is a easy quick short version with questions related to the three primary languages of web development. 
+                        Cick on $__box to start the quiz. If you enter the correct answer a message will appear for the amount you earned. 
+                        If incorrect click button again to try again, or click close to pick another box.</h4>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                     <img class="first-project img-responsive" src="images/box-1.png" alt="first-project" data-toggle="modal" data-target="#picture1">
+                </div>
+                <div class="col-md-3">
+                    <img class="web-designer img-responsive" src="images/box-2.png"
+                    alt="web-dev" data-toggle="modal" data-target="#picture2">
+                </div>
+                <div class="col-md-3">
+                    <img class="cat img-responsive" src="images/box-3.png"
+                  alt="card" data-toggle="modal" data-target="#picture3">
+                </div>
+                <div class="col-md-3">
+                    <img class="cat img-responsive" src="images/box-4.png" alt="card" data-toggle="modal" data-target="#picture3">
+                </div>
+<div class="col-md-3">
+    <img class="first-project img-responsive" src="images/box-1.png" alt="first-project" data-toggle="modal" data-target="#picture1">
+</div>
+<div class="col-md-3">
+    <img class="web-designer img-responsive" src="images/box-2.png" alt="web-dev" data-toggle="modal" data-target="#picture2">
+</div>
+<div class="col-md-3">
+    <img class="cat img-responsive" src="images/box-3.png" alt="card" data-toggle="modal" data-target="#picture3">
+</div>
+<div class="col-md-3">
+    <img class="cat img-responsive" src="images/box-4.png" alt="card" data-toggle="modal" data-target="#picture3">
+</div>
+            </div>
+            <div class="row">
+                
+                    <hr class="horizontal-rule">
+                    <footer class="copyright">
+                <div class="col-md-6">
+                    <p>© 2017 Reserved-Fahad Zakir</p>
+                </div>
+                <div class="col-md-6 template"> 
+                    <p>Template by FZ Template</p>
+                    </footer>
+                </div>
+            </div>
         </div>
-    </nav>
-    <main>
-        <h2 class="instructions">Instructions</h2>
+        <!--MODAL-->
+        <div class="modal fade" id="picture1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel1">My first project</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/box-2.PNG" alt="1st-project">
+                        This was my first project in this class. I learned a lot about HTML and CSS. Link to site: <a href="https://maktub35.github.io/maktub35.github.io-first-project/">link</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="picture2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel2">My first portfolio</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive" src="images/portfolio.PNG" alt="portfolio">
+                        This was the first portfolio site that I developed, it was the first time I used the framework bootstrap which was an amazing experience. Link to site: <a href="https://maktub35.github.io/">link</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="picture3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="myModalLabel3">Animal trading card</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-responsive new" src="images/cat.jpg" alt="cat">
+                    <button onclick="myFunction()">Click here to enter answer</button>
 
-        <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-sujaku, pexeso or simply Pairs, is a card game
-            in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The
-            object of the game is to turn over pairs of matching cards.</p>
-        </cd-md-6>
-        </row>
-        <div id="game-board" class="board clearfix"></div>
-    </main>
-    </div>
-    <button type="button" onClick="refreshPage()">Reset</button>
-    <footer class="clearfix">
-        <p class="copyright">Copyright 2017</p>
-        <p class="message">Created with &hearts; by
-            <span class="name">Fahad Zakir</span>
-        </p>
-    </footer>
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+                      <p id="new">  We made an animal trading card in this one in which we learned how to use css, with properties such as box-shadow. Link to card:</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
-
 </html>
