@@ -4,7 +4,7 @@
     });
 
 
-    function myFunction() {
+    function modalFunctionForQuestionsOne() {
         var txt;
         var person = prompt('What does HTML stand for');
         if (person == null || person == "") {
@@ -17,7 +17,7 @@
         document.getElementById("html-200").innerHTML = txt;
     }
 
-    function myFunctionTwo() {
+    function modalFunctionsForQuestionsTwo() {
         var txt;
         var person = prompt('What are the HTML elements represented by?');
         if (person == null || person == "") {
@@ -30,7 +30,7 @@
         document.getElementById("html-500").innerHTML = txt;
     }
 
-    function myFunctionThree() {
+    function modalFunctionsForQuestionsThree() {
         var txt;
         var person = prompt('What is the root element of an HTML page');
         if (person == null || person == "") {
@@ -43,7 +43,7 @@
         document.getElementById("html-1000").innerHTML = txt;
     }
 
-    function myFunctionFour() {
+    function modalFunctionsForQuestionsFour() {
         var txt;
         var person = prompt('What does CSS stand for');
         if (person == null || person == "") {
@@ -56,7 +56,7 @@
         document.getElementById("css-200").innerHTML = txt;
     }
 
-    function myFunctionFive() {
+    function modalFunctinosForQuestionsFive() {
         var txt;
         var person = prompt('Who oficially recommended CSS1 in 1995?');
         if (person == null || person == "") {
@@ -69,7 +69,7 @@
         document.getElementById("css-500").innerHTML = txt;
     }
 
-    function myFunctionSix() {
+    function modalFunctionsForQuestionsSix() {
         var txt;
         var person = prompt('How do you call a class with the name slam in a CSS style.sheet?');
         if (person == null || person == "") {
@@ -82,7 +82,7 @@
         document.getElementById("css-1000").innerHTML = txt;
     }
 
-    function myFunctionSeven() {
+    function modalFunctionsForQuestionsSeven() {
         var txt;
         var person = prompt('What is declared to store data in JavaScript');
         if (person == null || person == "") {
@@ -95,7 +95,7 @@
         document.getElementById("js-200").innerHTML = txt;
     }
 
-    function myFunctionEight() {
+    function modalFunctionsForQuestionsEight() {
         var txt;
         var person = prompt('Who is the founder of JavaScript');
         if (person == null || person == "") {
@@ -108,7 +108,7 @@
         document.getElementById("js-500").innerHTML = txt;
     }
 
-    function myFunctionNine() {
+    function modalFunctionsForQuestionsNine() {
         var txt;
         var person = prompt('What comes up when you add 0.1 and 0.2 in the console?');
         if (person == null || person == "") {
