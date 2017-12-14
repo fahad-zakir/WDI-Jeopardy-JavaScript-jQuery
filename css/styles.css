@@ -1,45 +1,99 @@
 body {
-    background-color: rgba(128, 128, 128, 0.37);
-    text-align: center;
+    bacground: url(../images/gray-bg.jpg);
     font-family: 'Audiowide', cursive;
     font-weight: 300;
     color: black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
-   div.row.text-center {
-       margin-left: 250px;
-       text-align: center!important;
-   }
+.logo {
+    margin-top: 20px;
+    width: 25%;
+    height: 20%;
+    border-radius: 50%;
+    border: 3px solid orange;
+}
 
- img.Jeopardy {
-    margin-right: 45px;
-    
-}  
+.carousel img {
+    height: 350px !important;
+    width: 1200px !important;
+}
+
+.name {
+    font-family: 'Audiowide', cursive;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.profession {
+    font-size: 20px;
+    font-family: cursive;
+}
 
 .horizontal-rule {
-    border: 2px solid #e100ff;
+    border: 2px solid #ffa500;
 }
 
-.horizontal-rule-two {
-    border: 4px solid #e100ff;
+.coding {
+   max-width: 100%;
+   max-height: 100%;
 }
 
-.instructions {
+.featured-work {
     color: #2d3c49;
-    font-weight: bold;
-    font-family: 'Spectral SC',
-    serif;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+first-project {
+    width: 300px;
+    height: 200px;
+}
+
+.project-text {
+    color: black;
+    text-transform: uppercase;
+}
+
+web-designer {
+    width: 300px;
+    height: 200px;
+}
+
+.web-text {
+    text-transform: uppercase;
+}
+
+cat {
+    width: 300px;
+    height: 200px;
+}
+
+.cat-text {
+    color: black;
+    text-transform: uppercase;
+}
+
+.buttons {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.buttons:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
 }
 
 .copyright {
     text-align: left;
 }
 
-img:hover {
-    cursor: pointer;
-        background: #e1e1e1;
-        border-top: 1px solid #d0d0d0;
+.template {
+    padding-left: 350px;
 }
-
-

@@ -1,245 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!DOCTYPE html>
+    <html lang="en">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeopardy Online</title>
-    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <title>Jeopardy</title>
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
-    <!-- Boostrap 4 CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="row header">
-            <div class="col-md-12 text-right text-uppercase">
-                <img class="Jeopardy" src="images/jeopardy.jpg" alt="logo">
-            </div>
-        </div>
-
-        <div class="row">
+    <header>
+        <div class="container-fluid">
             <div class="col-md-12">
-                <hr class="horizontal-rule">
+                <h1 class="title">Jeopardy Online</h1>
             </div>
-        </div>
-        <div class="row">
             <div class="col-md-12">
-                <h5 class="instructions">Play the classic quiz game of Jeopardy! Cick on $__box to start the quiz. If you enter the correct answer
-                    a message will appear for the amount you earned. If incorrect click button again to try again, or click
-                    close to pick another box.</h5>
+                <h3 class="sub-header">Play the classic game of Jeopardy!</h3>
             </div>
+    </header>
+    <nav>
+        <div class="col-md-12">
+            <a href=“#instructions”>Instructions</a>
+            <a href=“#game”>Game</a>
         </div>
-        <div class="row text-center">
-            <div class="first-row">
-                <img class="first-box img-responsive" src="images/box-1.png" alt="box-1" data-toggle="modal" data-target="#picture1">
-            </div>
-            <div class="second-row">
-                <img class="second-box img-responsive" src="images/box-2.png" alt="box-2" data-toggle="modal" data-target="#picture2">
-            </div>
-            <div class="third-row">
-                <img class="third-box-responsive" src="images/box-3.png" alt="box-3" data-toggle="modal" data-target="#picture3">
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="fouth-row">
-                <img class="fourth-box img-responsive" src="images/box-4.png" alt="box-4" data-toggle="modal" data-target="#picture4">
-            </div>
-            <div class="fifth-row">
-                <img class="fifth-box img-responsive" src="images/box-5.png" alt="box-5" data-toggle="modal" data-target="#picture5">
-            </div>
-            <div class="sixth-row">
-                <img class="sixth-box img-responsive" src="images/box-6.png" alt="box-6" data-toggle="modal" data-target="#picture6">
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="seventh-row">
-                <img class="seventh-box img-responsive" src="images/box-7.png" alt="box-7" data-toggle="modal" data-target="#picture7">
-            </div>
-            <div class="eight-row">
-                <img class="eight-box img-responsive" src="images/box-8.png" alt="box-8" data-toggle="modal" data-target="#picture8">
-            </div>
-            <div class="ninth-row">
-                <img class="nint-box img-responsive" src="images/box-9.png" alt="box-9" data-toggle="modal" data-target="#picture9">
-            </div>
-        </div>
-    </div>
-    <div id="input_div">
-        <input type="text" size="25" value="0" id="count">
-        <input type="button" value="-" id="moins" onclick="minus()">
-        <input type="button" value="+" id="plus" onclick="plus()">
-    </div>
+    </nav>
+    <main>
+        <h2 class="instructions">Instructions</h2>
 
-
-
-
-    <!--MODAL-->
-    <div class="modal fade" id="picture1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel1">HTML>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/html-200.png" alt="html-200">
-                    <button onclick="myFunction()">Click here to enter answer</button>
-                    <p id="html-200"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
+        <p>Concentration, also known as Match Match, Memory, Pelmanism, Shinkei-sujaku, pexeso or simply Pairs, is a card game
+            in which all of the cards are laid face down on a surface and two cards are flipped face up over each turn. The
+            object of the game is to turn over pairs of matching cards.</p>
+        </cd-md-6>
+        </row>
+        <div id="game-board" class="board clearfix"></div>
+    </main>
     </div>
-    <div class="modal fade" id="picture2" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel2">CSS</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/css-200.png" alt="css-200">
-                    <button onclick="myFunctionFour()">Click here to enter answer</button>
-                    <p id="css-200"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default-2" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture3" tabindex="-3" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel3">JavaScript</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive new" src="images/JS-200.png" alt="js-200">
-                    <button onclick="myFunctionSeven()">Click here to enter answer</button>
-                    <p id="js-200"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture4" tabindex="-4" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel4">HTML</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/html-500.png" alt="html-500">
-                    <button onclick="myFunctionTwo()">Click here to enter answer</button>
-                    <p id="html-500"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture5" tabindex="-5" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel5">CSS</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/css-500.png" alt="css-500">
-                    <button onclick="myFunctionFive()">Click here to enter answer</button>
-                    <p id="css-500"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture6" tabindex="-6" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel6">JavaScript/h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive new" src="images/JS-500.png" alt="js-500">
-                    <button onclick="myFunctionEight()">Click here to enter answer</button>
-                    <p id="js-500"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture7" tabindex="-7" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel7">HTML</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/html-1000.png" alt="html-1000">
-                    <button onclick="myFunctionThree()">Click here to enter answer</button>
-                    <p id="html-1000"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture8" tabindex="-8" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel8">CSS</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/css-1000.png" alt="css-1000">
-                    <button onclick="myFunctionSix()">Click here to enter answer</button>
-                    <p id="css-1000"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture9" tabindex="-9" role="dialog" aria-labelledby="myModalLabel9" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel9">JavaScript</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive new" src="images/JS-1000.png" alt="js-1000">
-                    <button onclick="myFunctionNine()">Click here to enter answer</button>
-                    <p id="js-1000"></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    <button type="button" onClick="refreshPage()">Reset</button>
+    <footer class="clearfix">
+        <p class="copyright">Copyright 2017</p>
+        <p class="message">Created with &hearts; by
+            <span class="name">Fahad Zakir</span>
+        </p>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-        crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
