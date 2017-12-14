@@ -8,136 +8,86 @@
     <title>Jeopardy Online</title>
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet">
-
-    <!-- Boostrap CSS -->
+    <!-- Boostrap 4 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
-    crossorigin="anonymous">
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
 </head>
 
 <body>
     <div class="container">
         <div class="row header">
             <div class="col-md-12 text-right text-uppercase">
-                <img class="Jeopardy" src="images/jeopardy.jpg" alt="title">
+                <img class="Jeopardy" src="images/jeopardy.jpg" alt="logo">
             </div>
         </div>
-        <div class="row-main"
+
         <div class="row">
             <div class="col-md-12">
                 <hr class="horizontal-rule">
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12">
-                <h5 class="featured-work">Play the classic quiz game of Jeopardy. This is a easy quick short version with questions related to the three
-                    primary languages of web development. Cick on $__box to start the quiz. If you enter the correct answer
+                <h5 class="instructions">Play the classic quiz game of Jeopardy! Cick on $__box to start the quiz. If you enter the correct answer
                     a message will appear for the amount you earned. If incorrect click button again to try again, or click
                     close to pick another box.</h5>
             </div>
         </div>
         <div class="row text-center">
-            <div class="">
-                <img class="first-project img-responsive" src="images/box-1.png" alt="first-project" data-toggle="modal" data-target="#picture1">
+            <div class="first-row">
+                <img class="first-box img-responsive" src="images/box-1.png" alt="box-1" data-toggle="modal" data-target="#picture1">
             </div>
-            <div class="">
-                <img class="web-designer img-responsive" src="images/box-2.png" alt="web-dev" data-toggle="modal" data-target="#picture2">
+            <div class="second-row">
+                <img class="second-box img-responsive" src="images/box-2.png" alt="box-2" data-toggle="modal" data-target="#picture2">
             </div>
-            <div class="">
-                <img class="cat-img-responsive" src="images/box-3.png" alt="card" data-toggle="modal" data-target="#picture3">
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="">
-                <img class="first-project img-responsive" src="images/box-4.png" alt="first-project" data-toggle="modal" data-target="#picture1">
-            </div>
-            <div class="">
-                <img class="web-designer img-responsive" src="images/box-5.png" alt="web-dev" data-toggle="modal" data-target="#picture2">
-            </div>
-            <div class="">
-                <img class="cat img-responsive" src="images/box-6.png" alt="card" data-toggle="modal" data-target="#picture3">
+            <div class="third-row">
+                <img class="third-box-responsive" src="images/box-3.png" alt="box-3" data-toggle="modal" data-target="#picture3">
             </div>
         </div>
         <div class="row text-center">
-            <div class="">
-                <img class="first-project img-responsive" src="images/box-7.png" alt="first-project" data-toggle="modal" data-target="#picture1">
+            <div class="fouth-row">
+                <img class="fourth-box img-responsive" src="images/box-4.png" alt="box-4" data-toggle="modal" data-target="#picture4">
             </div>
-            <div class="">
-                <img class="web-designer img-responsive" src="images/box-8.png" alt="web-dev" data-toggle="modal" data-target="#picture2">
+            <div class="fifth-row">
+                <img class="fifth-box img-responsive" src="images/box-5.png" alt="box-5" data-toggle="modal" data-target="#picture5">
             </div>
-            <div class="">
-                <img class="cat img-responsive" src="images/box-9.png" alt="card" data-toggle="modal" data-target="#picture3">
+            <div class="sixth-row">
+                <img class="sixth-box img-responsive" src="images/box-6.png" alt="box-6" data-toggle="modal" data-target="#picture6">
             </div>
         </div>
-        </div>
-<div id="input_div">
-    <input type="text" size="25" value="0" id="count">
-    <input type="button" value="-" id="moins" onclick="minus()">
-    <input type="button" value="+" id="plus" onclick="plus()">
-</div>
-
-
-        <div class="row">
-
-            <hr class="horizontal-rule-two">
-            <footer class="copyright">
-                <div class="col-md-6">
-                    <p>© 2017 Reserved-Fahad Zakir</p>
-                </div>
-                <div class="col-md-6 template">
-                    <p>Template by FZ Template</p>
-            </footer>
+        <div class="row text-center">
+            <div class="seventh-row">
+                <img class="seventh-box img-responsive" src="images/box-7.png" alt="box-7" data-toggle="modal" data-target="#picture7">
+            </div>
+            <div class="eight-row">
+                <img class="eight-box img-responsive" src="images/box-8.png" alt="box-8" data-toggle="modal" data-target="#picture8">
+            </div>
+            <div class="ninth-row">
+                <img class="nint-box img-responsive" src="images/box-9.png" alt="box-9" data-toggle="modal" data-target="#picture9">
             </div>
         </div>
     </div>
+    <div id="input_div">
+        <input type="text" size="25" value="0" id="count">
+        <input type="button" value="-" id="moins" onclick="minus()">
+        <input type="button" value="+" id="plus" onclick="plus()">
+    </div>
+
+
+
+
     <!--MODAL-->
     <div class="modal fade" id="picture1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel1">My first project</h4>
+                    <h4 class="modal-title" id="myModalLabel1">HTML>
                 </div>
                 <div class="modal-body">
-                    <img class="img-responsive" src="images/html-200.png" alt="1st-project"> 
-                    <a href="https://maktub35.github.io/maktub35.github.io-first-project/">link</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel2">My first portfolio</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive" src="images/html-500.png" alt="portfolio"> This was the first portfolio site that I developed, it was the first time I used the framework bootstrap
-                    which was an amazing experience. Link to site:
-                    <a href="https://maktub35.github.io/">link</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="picture3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel3">Animal trading card</h4>
-                </div>
-                <div class="modal-body">
-                    <img class="img-responsive new" src="images/html-1000.png" alt="cat">
+                    <img class="img-responsive" src="images/html-200.png" alt="html-200">
                     <button onclick="myFunction()">Click here to enter answer</button>
-
-                    <p id="new"> We made an animal trading card in this one in which we learned how to use css, with properties such as
-                        box-shadow. Link to card:</p>
+                    <p id="html-200"></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -145,117 +95,149 @@
             </div>
         </div>
     </div>
-<div class="modal fade" id="picture4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel1">My first project</h4>
-            </div>
-            <div class="modal-body">
-                <img class="img-responsive" src="images/css-200.png" alt="1st-project">
-                <a href="https://maktub35.github.io/maktub35.github.io-first-project/">link</a>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="picture5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel2">My first portfolio</h4>
-            </div>
-            <div class="modal-body">
-                <img class="img-responsive" src="images/portfolio.PNG" alt="portfolio"> This was the first portfolio site that I developed, it was the first time I used the framework bootstrap
-                which was an amazing experience. Link to site:
-                <a href="https://maktub35.github.io/">link</a>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <div class="modal fade" id="picture2" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel2">CSS</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/css-200.png" alt="css-200">
+                    <button onclick="myFunctionFour()">Click here to enter answer</button>
+                    <p id="css-200"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default-2" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="picture6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel3">Animal trading card</h4>
-            </div>
-            <div class="modal-body">
-                <img class="img-responsive new" src="images/cat.jpg" alt="cat">
-                <button onclick="myFunction()">Click here to enter answer</button>
-
-                <p id="new"> We made an animal trading card in this one in which we learned how to use css, with properties such as box-shadow.
-                    Link to card:</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <div class="modal fade" id="picture3" tabindex="-3" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel3">JavaScript</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive new" src="images/JS-200.png" alt="js-200">
+                    <button onclick="myFunctionSeven()">Click here to enter answer</button>
+                    <p id="js-200"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="picture7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel1">My first project</h4>
-            </div>
-            <div class="modal-body">
-                <img class="img-responsive" src="images/box-2.PNG" alt="1st-project">
-                <a href="https://maktub35.github.io/maktub35.github.io-first-project/">link</a>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" id="picture8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel2">My first portfolio</h4>
-            </div>
-            <div class="modal-body">
-                <img class="img-responsive" src="images/portfolio.PNG" alt="portfolio"> This was the first portfolio site that I developed, it was the first time I used the framework bootstrap
-                which was an amazing experience. Link to site:
-                <a href="https://maktub35.github.io/">link</a>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <div class="modal fade" id="picture4" tabindex="-4" role="dialog" aria-labelledby="myModalLabel4" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel4">HTML</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/html-500.png" alt="html-500">
+                    <button onclick="myFunctionTwo()">Click here to enter answer</button>
+                    <p id="html-500"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="modal fade" id="picture9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel9" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel3">Animal trading card</h4>
-            </div>
-            <div class="modal-body">
-                <img class="img-responsive new" src="images/cat.jpg" alt="cat">
-                <button onclick="myFunction()">Click here to enter answer</button>
-
-                <p id="new"> We made an animal trading card in this one in which we learned how to use css, with properties such as box-shadow.
-                    Link to card:</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <div class="modal fade" id="picture5" tabindex="-5" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel5">CSS</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/css-500.png" alt="css-500">
+                    <button onclick="myFunctionFive()">Click here to enter answer</button>
+                    <p id="css-500"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <div class="modal fade" id="picture6" tabindex="-6" role="dialog" aria-labelledby="myModalLabel6" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel6">JavaScript/h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive new" src="images/JS-500.png" alt="js-500">
+                    <button onclick="myFunctionEight()">Click here to enter answer</button>
+                    <p id="js-500"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="picture7" tabindex="-7" role="dialog" aria-labelledby="myModalLabel7" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel7">HTML</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/html-1000.png" alt="html-1000">
+                    <button onclick="myFunctionThree()">Click here to enter answer</button>
+                    <p id="html-1000"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="picture8" tabindex="-8" role="dialog" aria-labelledby="myModalLabel8" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel8">CSS</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="images/css-1000.png" alt="css-1000">
+                    <button onclick="myFunctionSix()">Click here to enter answer</button>
+                    <p id="css-1000"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="picture9" tabindex="-9" role="dialog" aria-labelledby="myModalLabel9" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel9">JavaScript</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive new" src="images/JS-1000.png" alt="js-1000">
+                    <button onclick="myFunctionNine()">Click here to enter answer</button>
+                    <p id="js-1000"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>
