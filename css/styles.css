@@ -1,12 +1,22 @@
 body {
     bacground: url(../images/gray-bg.jpg);
+    background-color: gray;
+    text-align: center;
     font-family: 'Audiowide', cursive;
     font-weight: 300;
     color: black;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+   div.row.text-center {
+       margin-left: 250px;
+       text-align: center!important;
+   }
 
+ img.Jeopardy {
+    margin-right: 45px;
+    
+}  
 .logo {
     margin-top: 20px;
     width: 25%;
@@ -33,9 +43,12 @@ body {
 }
 
 .horizontal-rule {
-    border: 2px solid #ffa500;
+    border: 2px solid #e100ff;
 }
 
+.horizontal-rule-two {
+    border: 4px solid #e100ff;
+}
 .coding {
    max-width: 100%;
    max-height: 100%;
@@ -43,11 +56,12 @@ body {
 
 .featured-work {
     color: #2d3c49;
-    margin-top: 40px;
-    margin-bottom: 20px;
+    font-family: 'Spectral SC',
+    serif;
+    margin-bottom: 40px;
 }
 
-.first-project {
+first-project {
     width: 300px;
     height: 200px;
 }
@@ -57,7 +71,7 @@ body {
     text-transform: uppercase;
 }
 
-.web-designer {
+web-designer {
     width: 300px;
     height: 200px;
 }
@@ -66,7 +80,7 @@ body {
     text-transform: uppercase;
 }
 
-.cat {
+cat {
     width: 300px;
     height: 200px;
 }
