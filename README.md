@@ -20,3 +20,4 @@ https://imgur.com/OKN9Nl7
 * MacDown (for writing this Read-Me)
 * Figma (For Drawing CSS-Boxes)
 * GitHub, GIT
+* Imgur
