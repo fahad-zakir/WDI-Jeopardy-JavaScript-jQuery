@@ -10,6 +10,10 @@ body {
     border: 2px solid #e100ff;
 }
 
+ img.Jeopardy {
+     margin-right: 45px;
+ }
+
 .instructions {
     color: #2d3c49;
     font-weight: bold;
