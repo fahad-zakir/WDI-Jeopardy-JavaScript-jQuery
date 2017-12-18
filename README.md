@@ -7,14 +7,8 @@ https://trello.com/b/73odC5z5/wdi-jeopardy
 
 # Technolgoies Used
 * Bootstrap 4
-* MacDown (for writing this Read-Me)
-
-
-#Links for Imgur 
-https://imgur.com/P088vjd
-https://imgur.com/OKN9Nl7
-https://imgur.com/Q52nWJ8
-
+* MacDown (for writing this Read-Me
+* 
 
 
 

@@ -6,22 +6,8 @@ body {
     color: black;
 }
 
-   div.row.text-center {
-       margin-left: 250px;
-       text-align: center!important;
-   }
-
- img.Jeopardy {
-    margin-right: 45px;
-    
-}  
-
 .horizontal-rule {
     border: 2px solid #e100ff;
-}
-
-.horizontal-rule-two {
-    border: 4px solid #e100ff;
 }
 
 .instructions {
@@ -30,10 +16,6 @@ body {
     font-family: 'Spectral SC',
     serif;
     margin-bottom: 40px;
-}
-
-.copyright {
-    text-align: left;
 }
 
 img:hover {

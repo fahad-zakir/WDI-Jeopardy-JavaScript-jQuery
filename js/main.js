@@ -1,137 +1,247 @@
-    // A $( document ).ready() block.
-    $(document).ready(function () {
-        console.log("ready!");
-    });
+// A $( document ).ready() block.
+$(document).ready(function () {
+    console.log("ready!");
+});
 
 
-    function modalFunctionForQuestionsOne() {
-        var txt;
-        var person = prompt('What does HTML stand for');
-        if (person == null || person == "") {
+let count = 0;
+let countEl = $("#count");
 
-        } else if (person === 'Hypertext Markup Language') {
+//function reference: https://www.w3schools.com/js/js_popup.asp   (Added data toggle off from modals and close modal, slack friend taught)
+function modalFunctionForQuestionOne() {
+    let txt;
+    const gamer = prompt('What does HTML stand for?');
+    if (gamer == null || gamer == "") {
+        return;
+    } else if (gamer.toLowerCase() === 'hypertext markup language') {
+        if (count <= 5099) {
             txt = 'Congragulations! You get $200';
-        } else {
-            txt = 'Good Try! but that was incorrect.';
+            count += 200;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".first-box").attr('data-toggle', '');
+            }, 500);
         }
-        document.getElementById("html-200").innerHTML = txt;
+        if (count >= 5100) { //Scoreboard condition for conclusion of game, so if player scores more than, it alerts//
+            const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+            if (confirmed) {
+                location.reload();
+            }
+            return;
+        }
+    } else {
+        txt = 'Good Try! but that was incorrect.';
     }
+    $('#html-200').html(txt);
+}
 
-    function modalFunctionsForQuestionsTwo() {
-        var txt;
-        var person = prompt('What are the HTML elements represented by?');
-        if (person == null || person == "") {
-
-        } else if (person === 'Tags') {
+function modalFunctionForQuestionTwo() {
+    let txt;
+    const gamer = prompt('What are the HTML elements represented by?');
+    if (gamer == null || gamer == "") {
+        return;
+    } else if (gamer.toLowerCase() === 'tags') {
+        if (count <= 5099) {
             txt = 'Congragulations! You get $500';
+            count += 500;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".fourth-box").attr('data-toggle', '');
+            }, 500);
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("html-500").innerHTML = txt;
+        $('#html-500').html(txt);
     }
 
-    function modalFunctionsForQuestionsThree() {
-        var txt;
-        var person = prompt('What is the root element of an HTML page');
-        if (person == null || person == "") {
+    function modalFunctionForQuestionThree() {
+        let txt;
+        const gamer = prompt('What is the root element of an HTML page');
+        if (gamer == null || gamer == "") {
 
-        } else if (person === '<html>') {
+        } else if (gamer.toLowerCase() === '<html>') {
             txt = 'Congragulations! You get $1000';
+            count += 1000;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".seventh-box").attr('data-toggle', '');
+            }, 500)
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("html-1000").innerHTML = txt;
+        $('#html-1000').html(txt);
     }
 
-    function modalFunctionsForQuestionsFour() {
-        var txt;
-        var person = prompt('What does CSS stand for');
-        if (person == null || person == "") {
+    function modalFunctionForQuestionFour() {
+        let txt;
+        const gamer = prompt('What does CSS stand for');
+        if (gamer == null || gamer == "") {
 
-        } else if (person === 'Cascading Style Sheets') {
+        } else if (gamer.toLowerCase() === 'cascading style sheets') {
             txt = 'Congragulations! You get $200';
+            count += 200;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".second-box").attr('data-toggle', '');
+            }, 500);
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("css-200").innerHTML = txt;
+        $('#css-200').html(txt);
     }
 
-    function modalFunctinosForQuestionsFive() {
-        var txt;
-        var person = prompt('Who oficially recommended CSS1 in 1995?');
-        if (person == null || person == "") {
+    function modalFunctionForQuestionFive() {
+        let txt;
+        const gamer = prompt('Who oficially recommended CSS1 in 1995?');
+        if (gamer == null || gamer == "") {
 
-        } else if (person === 'W3C') {
+        } else if (gamer.toLowerCase() === 'w3c') {
             txt = 'Congragulations! You get $500';
+            count += 500;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".fifth-box").attr('data-toggle', '');
+            }, 500);
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("css-500").innerHTML = txt;
+        $('#css-500').html(txt);
     }
 
-    function modalFunctionsForQuestionsSix() {
-        var txt;
-        var person = prompt('How do you call a class with the name slam in a CSS style.sheet?');
-        if (person == null || person == "") {
+    function modalFunctionForQuestionSix() {
+        let txt;
+        const gamer = prompt('How do you call a class with the name slam in a CSS style.sheet?');
+        if (gamer == null || gamer == "") {
 
-        } else if (person === '.slam') {
+        } else if (gamer.toLowerCase() === '.slam') {
             txt = 'Congragulations! You get $1000';
+            count += 1000;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".eighth-box").attr('data-toggle', '');
+            }, 500);
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("css-1000").innerHTML = txt;
+        $('#css-1000').html(txt);
     }
 
-    function modalFunctionsForQuestionsSeven() {
-        var txt;
-        var person = prompt('What is declared to store data in JavaScript');
-        if (person == null || person == "") {
+    function modalFunctionForQuestionSeven() {
+        let txt;
+        const gamer = prompt('What is declared to store data in JavaScript');
+        if (gamer == null || gamer == "") {
 
-        } else if (person === 'Variable') {
+        } else if (gamer.toLowerCase() === 'constiable') {
             txt = 'Congragulations! You get $200';
+            count += 200;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".third-box").attr('data-toggle', '');
+            }, 500);
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("js-200").innerHTML = txt;
+        $('#js-200').html(txt);
     }
 
-    function modalFunctionsForQuestionsEight() {
-        var txt;
-        var person = prompt('Who is the founder of JavaScript');
-        if (person == null || person == "") {
+    function modalFunctionForQuestionEight() {
+        let txt;
+        const gamer = prompt('Who is the founder of JavaScript');
+        if (gamer == null || gamer == "") {
 
-        } else if (person === 'Brendan Eich') {
+        } else if (gamer.toLowerCase() === 'brendan eich') {
             txt = 'Congragulations! You get $500';
+            count += 500;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".sixth-box").attr('data-toggle', '');
+            }, 500);
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("js-500").innerHTML = txt;
+        $('#js-500').html(txt);
     }
 
-    function modalFunctionsForQuestionsNine() {
-        var txt;
-        var person = prompt('What comes up when you add 0.1 and 0.2 in the console?');
-        if (person == null || person == "") {
+    function modalFunctionForQuestionNine() {
+        let txt;
+        const gamer = prompt('What comes up when you add 0.1 and 0.2 in the console?');
+        if (gamer == null || gamer == "") {
 
-        } else if (person === '0.30000000000000004') {
+        } else if (gamer === '0.30000000000000004') {
             txt = 'Congragulations! You get $1000';
+            count += 1000;
+            countEl.html(count);
+            setTimeout(function () {
+                $(".close-modal").click();
+                $(".ninth-box").attr('data-toggle', '');
+            }, 500);
+            if (count == 5100) {
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                if (confirmed) {
+                    location.reload();
+                }
+                return;
+            }
         } else {
             txt = 'Good Try! but that was incorrect.';
         }
-        document.getElementById("js-1000").innerHTML = txt;
+        $('#js-1000').html(txt);
     }
-
-    var count = 200;
-    var countEl = document.getElementById("count");
-
-    function plus() {
-        count += 200;
-        countEl.value = count;
-    }
-
-    function minus() {
-        if (count > 200) {
-            count -= 200;
-            countEl.value = count;
-        }
-    }
+}
