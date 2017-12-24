@@ -11,7 +11,7 @@ let countEl = $("#count");
 function modalFunctionForQuestionOne() {
     let txt;
     const gamer = prompt('What does HTML stand for?');
-    if (gamer == null || gamer == "") {
+    if (gamer === null || gamer === "") {
         return;
     } else if (gamer.toLowerCase() === 'hypertext markup language') {
         if (count <= 5099) {
@@ -39,7 +39,7 @@ function modalFunctionForQuestionOne() {
 function modalFunctionForQuestionTwo() {
     let txt;
     const gamer = prompt('What are the HTML elements represented by?');
-    if (gamer == null || gamer == "") {
+    if (gamer === null || gamer === "") {
         return;
     } else if (gamer.toLowerCase() === 'tags') {
         if (count <= 5099) {
@@ -50,7 +50,8 @@ function modalFunctionForQuestionTwo() {
                 $(".close-modal").click();
                 $(".fourth-box").attr('data-toggle', '');
             }, 500);
-            if (count == 5100) {
+          }
+          if (count == 5100) {
                 const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
@@ -66,7 +67,7 @@ function modalFunctionForQuestionTwo() {
     function modalFunctionForQuestionThree() {
         let txt;
         const gamer = prompt('What is the root element of an HTML page');
-        if (gamer == null || gamer == "") {
+        if (gamer === null || gamer === "") {
 
         } else if (gamer.toLowerCase() === '<html>') {
             txt = 'Congragulations! You get $1000';
@@ -75,7 +76,7 @@ function modalFunctionForQuestionTwo() {
             setTimeout(function () {
                 $(".close-modal").click();
                 $(".seventh-box").attr('data-toggle', '');
-            }, 500)
+            }, 500);
             if (count == 5100) {
                 const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
@@ -92,7 +93,7 @@ function modalFunctionForQuestionTwo() {
     function modalFunctionForQuestionFour() {
         let txt;
         const gamer = prompt('What does CSS stand for');
-        if (gamer == null || gamer == "") {
+        if (gamer === null || gamer === "") {
 
         } else if (gamer.toLowerCase() === 'cascading style sheets') {
             txt = 'Congragulations! You get $200';
@@ -118,7 +119,7 @@ function modalFunctionForQuestionTwo() {
     function modalFunctionForQuestionFive() {
         let txt;
         const gamer = prompt('Who oficially recommended CSS1 in 1995?');
-        if (gamer == null || gamer == "") {
+        if (gamer === null || gamer === "") {
 
         } else if (gamer.toLowerCase() === 'w3c') {
             txt = 'Congragulations! You get $500';
@@ -144,7 +145,7 @@ function modalFunctionForQuestionTwo() {
     function modalFunctionForQuestionSix() {
         let txt;
         const gamer = prompt('How do you call a class with the name slam in a CSS style.sheet?');
-        if (gamer == null || gamer == "") {
+        if (gamer === null || gamer === "") {
 
         } else if (gamer.toLowerCase() === '.slam') {
             txt = 'Congragulations! You get $1000';
@@ -170,7 +171,7 @@ function modalFunctionForQuestionTwo() {
     function modalFunctionForQuestionSeven() {
         let txt;
         const gamer = prompt('What is declared to store data in JavaScript');
-        if (gamer == null || gamer == "") {
+        if (gamer === null || gamer === "") {
 
         } else if (gamer.toLowerCase() === 'constiable') {
             txt = 'Congragulations! You get $200';
@@ -196,7 +197,7 @@ function modalFunctionForQuestionTwo() {
     function modalFunctionForQuestionEight() {
         let txt;
         const gamer = prompt('Who is the founder of JavaScript');
-        if (gamer == null || gamer == "") {
+        if (gamer === null || gamer === "") {
 
         } else if (gamer.toLowerCase() === 'brendan eich') {
             txt = 'Congragulations! You get $500';
@@ -222,7 +223,7 @@ function modalFunctionForQuestionTwo() {
     function modalFunctionForQuestionNine() {
         let txt;
         const gamer = prompt('What comes up when you add 0.1 and 0.2 in the console?');
-        if (gamer == null || gamer == "") {
+        if (gamer === null || gamer === "") {
 
         } else if (gamer === '0.30000000000000004') {
             txt = 'Congragulations! You get $1000';
@@ -244,4 +245,3 @@ function modalFunctionForQuestionTwo() {
         }
         $('#js-1000').html(txt);
     }
-}

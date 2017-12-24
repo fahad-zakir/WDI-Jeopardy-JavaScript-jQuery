@@ -10,22 +10,19 @@ body {
     border: 2px solid #e100ff;
 }
 
- img.Jeopardy {
-     margin-right: 45px;
- }
+img.Jeopardy {
+    margin-right: 45px;
+}
 
 .instructions {
     color: #2d3c49;
     font-weight: bold;
-    font-family: 'Spectral SC',
-    serif;
+    font-family: 'Spectral SC', serif;
     margin-bottom: 40px;
 }
 
 img:hover {
     cursor: pointer;
-        background: #e1e1e1;
-        border-top: 1px solid #d0d0d0;
+    background: #e1e1e1;
+    border-top: 1px solid #d0d0d0;
 }
-
-
