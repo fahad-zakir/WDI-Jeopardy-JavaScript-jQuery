@@ -173,7 +173,7 @@ function modalFunctionForQuestionTwo() {
         const gamer = prompt('What is declared to store data in JavaScript');
         if (gamer === null || gamer === "") {
 
-        } else if (gamer.toLowerCase() === 'constiable') {
+        } else if (gamer.toLowerCase() === 'variable') {
             txt = 'Congragulations! You get $200';
             count += 200;
             countEl.html(count);
