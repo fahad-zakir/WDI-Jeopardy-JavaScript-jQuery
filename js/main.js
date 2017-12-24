@@ -24,7 +24,7 @@ function modalFunctionForQuestionOne() {
             }, 500);
         }
         if (count >= 5100) { //Scoreboard condition for conclusion of game, so if player scores more than, it alerts//
-            const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+            const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
             if (confirmed) {
                 location.reload();
             }
@@ -52,7 +52,7 @@ function modalFunctionForQuestionTwo() {
             }, 500);
           }
           if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
@@ -78,7 +78,7 @@ function modalFunctionForQuestionTwo() {
                 $(".seventh-box").attr('data-toggle', '');
             }, 500);
             if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
@@ -104,7 +104,7 @@ function modalFunctionForQuestionTwo() {
                 $(".second-box").attr('data-toggle', '');
             }, 500);
             if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
@@ -130,7 +130,7 @@ function modalFunctionForQuestionTwo() {
                 $(".fifth-box").attr('data-toggle', '');
             }, 500);
             if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
@@ -156,7 +156,7 @@ function modalFunctionForQuestionTwo() {
                 $(".eighth-box").attr('data-toggle', '');
             }, 500);
             if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
@@ -182,7 +182,7 @@ function modalFunctionForQuestionTwo() {
                 $(".third-box").attr('data-toggle', '');
             }, 500);
             if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
@@ -208,7 +208,7 @@ function modalFunctionForQuestionTwo() {
                 $(".sixth-box").attr('data-toggle', '');
             }, 500);
             if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
@@ -234,7 +234,7 @@ function modalFunctionForQuestionTwo() {
                 $(".ninth-box").attr('data-toggle', '');
             }, 500);
             if (count == 5100) {
-                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $4000 and have earned a trip to Hawaii. Replay?");
+                const confirmed = confirm("Congragulations! You have answered all the Questions, earned a grand total of $5100 and have earned a trip to Hawaii. Replay?");
                 if (confirmed) {
                     location.reload();
                 }
