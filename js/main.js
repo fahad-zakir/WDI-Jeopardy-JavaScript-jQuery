@@ -101,7 +101,9 @@ function modalFunctionForQuestionFour() {
   let txt;
   const gamer = prompt("What does CSS stand for");
   if (gamer === null || gamer === "") {
-  } else if (gamer.toLowerCase().split(" ").join("") === "cascading style sheets") {
+  } else if (
+    gamer.toLowerCase().split(" ").join("") === "cascading style sheets"
+  ) {
     txt = "Congragulations! You get $200";
     count += 200;
     countEl.html(count);
@@ -188,7 +190,7 @@ function modalFunctionForQuestionSeven() {
     gamer.toLowerCase() === "variable" ||
     gamer.toLowerCase.includes("var") ||
     gamer.toLowerCase() === "const" ||
-    gamer.toLowerCase() === ("let")
+    gamer.toLowerCase() === "let"
   ) {
     txt = "Congragulations! You get $200";
     count += 200;
